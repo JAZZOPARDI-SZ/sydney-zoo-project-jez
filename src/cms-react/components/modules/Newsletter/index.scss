@@ -1,5 +1,15 @@
-.newsletter-form {
 
+@font-face {
+    font-family: "Gilroy";
+    src: url("https://21486425.fs1.hubspotusercontent-na1.net/hubfs/21486425/Gilroy-Medium.otf") format("opentype");
+}
+
+.newsletter-form {
+font-family: "Gilroy" !important;
+
+    * {
+        font-family: "Gilroy" !important;
+    }
     & > span {
         width: 100%;
     }
