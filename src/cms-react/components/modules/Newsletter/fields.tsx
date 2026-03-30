@@ -6,7 +6,7 @@ export const fields = (
 		<TextField
 			name="title"
 			label="Title"
-			default="Sign up to our newsletter"
+			default="Sign up to our newsletterz"
 			required
 		/>
 		<FormField
