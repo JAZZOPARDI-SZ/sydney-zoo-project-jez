@@ -1,0 +1,75 @@
+.universal-form {
+    fieldset {
+        @apply max-w-full flex mb-6;
+
+        label {
+            @apply text-black;
+        }
+
+        .hs-error-msg {
+            font-size: 12px !important;
+        }
+
+        .hs-form-field {
+            width: 100% !important;
+            float: none;
+
+            input {
+                width: 100% !important;
+                @apply text-center py-2 px-4;
+
+                &::placeholder {
+                    color: #373a3c
+                }
+
+            }
+        }
+    }
+
+    .actions {
+        text-align: center
+    }
+
+    [type="submit"] {
+        @apply bg-orange-500 text-sm text-white font-bold inline-flex items-center justify-center px-6 py-3 rounded-full;
+    }
+
+    .hs-form-field {
+        @apply px-[13px];
+    }
+    .hs-fieldtype-radio {
+        label:first-of-type {
+            @apply mb-3;
+        }
+        ul {
+            @apply flex flex-wrap gap-3;
+        }
+        @apply inline-flex flex-col;
+        .hs-form-radio {
+            @apply inline-flex;
+        }
+        .inputs-list {
+            width: unset;
+        }
+        .hs-form-radio-display {
+            @apply inline-flex;
+            input {
+                width: unset !important;
+            }
+            span {
+                @apply ml-1;
+            }
+        }
+    }
+    .hs-dependent-field {
+        @apply w-full;
+    }
+    .hs-fieldtype-select {
+        > label > span {
+            @apply mb-3;
+        }
+        select {
+            @apply px-5 py-2;
+        }
+    }
+}

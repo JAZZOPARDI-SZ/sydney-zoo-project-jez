@@ -1,0 +1,8 @@
+{
+  "appFunctions": {
+    "parrotFunction": {
+      "file": "parrot-function.js",
+      "endpoint": { "path": "parrot", "method": ["GET"] }
+    }
+  }
+}

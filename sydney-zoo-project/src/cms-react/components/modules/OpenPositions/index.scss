@@ -1,0 +1,56 @@
+/**
+*  These styles with the ".module" in the filename do make the classes unique
+*  and will be applied to the elements where they are included.
+*  Helpful to keep CSS from bleeding from one element to another.
+*/
+.BambooHR-ATS-board h2 {
+    font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    font-weight: normal;
+    color: #555;
+    border-bottom: 1px solid #a0a0a0 !important;
+    padding-bottom: 9px;
+    margin: 0;
+    text-align: left;   
+}
+.BambooHR-ATS-board p.blankState {
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    color: #cdcdcd;
+    clear: both;
+    border-bottom: solid #d7d7d7 1px;
+    font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 25px 0 35px;
+}
+.BambooHR-ATS-board ul ul {
+    padding: 2px 20px 12px 20px;
+    border-bottom: 1px solid #d7d7d7;
+    margin-bottom: 10px;
+}
+.BambooHR-ATS-board .BambooHR-ATS-Location {
+    float: right;
+    padding-top: 9px;
+}
+.BambooHR-ATS-board a {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.9em;
+    color: #F69300;
+}
+.BambooHR-ATS-board li {
+    color: #777;
+    list-style: none !important;
+    margin: 0 !important;
+    clear: both;
+}
+.BambooHR-ATS-board ul {
+    font-size: 12px;
+    list-style: none;
+    padding: 10px 0 0 0;
+    margin: 0;
+}
+.BambooHR-ATS-board {
+    text-align: left;
+}

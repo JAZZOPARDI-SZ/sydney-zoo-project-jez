@@ -1,0 +1,165 @@
+.universal-form {
+    @apply mb-4 w-full;
+    .hs_cos_wrapper_type_form {
+        @apply w-full;
+    }
+    fieldset {
+        @apply max-w-full flex md:flex-row flex-col;
+        div.input {
+            @apply mb-6;
+        }
+
+        label {
+            @apply text-black;
+        }
+
+        .hs-error-msg {
+            font-size: 12px !important;
+            color: #f2545b;
+        }
+
+
+        .hs-form-field {
+            width: 100% !important;
+            float: none;
+            .hs-input {
+                @apply w-full;
+            }
+            textarea {
+                @apply min-h-[140px];
+            }
+            input {
+                background-color: white !important;
+                width: 100%;
+                @apply py-2 px-4 mt-2;
+
+                &::placeholder {
+                    color: #373a3c;
+                }
+
+            }
+            .hs-input {
+                @apply mt-2;
+            }
+            ul {
+                @apply list-none block pl-0;
+                li {
+                    label {
+                        @apply inline-block;
+                        span {
+                            @apply ml-2;
+                        }
+                    }
+                }
+            }
+            ul {
+                @apply list-none block pl-0;
+                .hs-form-checkbox {
+                    @apply inline-flex flex-wrap;
+                    label {
+                        @apply block w-full justify-center mr-2;
+                        span {
+                            @apply ml-2;
+                        }
+                        input {
+                            @apply w-[unset] mt-0;
+                        }
+                    }
+                }
+            }
+            .hs-form-field > label > span {
+                @apply mb-[4px] inline-block;
+            }
+        }
+    }
+
+    .actions {
+        text-align: center
+    }
+
+    // [type="submit"] {
+    //     @apply bg-orange-500 text-sm text-white font-bold inline-flex items-center justify-center px-6 py-3 rounded-full;
+    // }
+
+    .hs-form-field {
+        @apply px-[13px];
+    }
+    .hs-fieldtype-radio {
+        label:first-of-type {
+            @apply mb-3;
+        }
+        ul {
+            @apply flex flex-wrap gap-3;
+        }
+        @apply inline-flex flex-col;
+        .hs-form-radio {
+            @apply inline-flex;
+        }
+        .inputs-list {
+            width: unset;
+        }
+        .hs-form-radio-display {
+            @apply inline-flex;
+            input {
+                width: unset !important;
+            }
+            span {
+                @apply ml-1;
+            }
+        }
+    }
+    .hs-dependent-field {
+        @apply w-full;
+    }
+    .hs-fieldtype-select {
+        > label > span {
+            @apply mb-3;
+        }
+        select {
+            background: white !important;
+            @apply px-5 py-2;
+        }
+    }
+    &.sky-primary .hs-button {
+        @apply bg-sky-600 border-2 font-bold border-transparent text-white hover:border-sky-600 hover:text-sky-600 hover:bg-white px-[100px] py-3 rounded-full cursor-pointer transition duration-300;
+    }
+    &.sky-secondary .hs-button {
+        @apply bg-white border-2 font-bold border-sky-600 text-sky-600 hover:border-sky-600 hover:text-white hover:bg-sky-600 px-[100px] py-3 rounded-full cursor-pointer transition duration-300;
+    }
+    &.green-primary .hs-button {
+        @apply bg-green-500 border-2 font-bold border-transparent text-white hover:border-green-500 hover:text-green-500 px-[100px] py-3 rounded-full hover:bg-white cursor-pointer transition duration-300;
+    }
+    &.green-secondary .hs-button {
+        @apply border-2 border-green-500 font-bold text-green-500 hover:bg-green-500 hover:text-white cursor-pointer px-[100px] py-3 rounded-full transition duration-300;
+    }
+    &.orange-primary .hs-button {
+        @apply bg-orange-500 hover:bg-white hover:text-orange-500 border-2 border-transparent hover:border-orange-500 cursor-pointer transition duration-300 text-sm text-white font-bold inline-flex items-center justify-center px-[100px] py-3 rounded-full;
+    }
+    &.orange-secondary .hs-button {
+        @apply bg-white text-orange-500 border-2 font-bold border-orange-500 opacity-[.9] hover:opacity-[1] px-[100px] py-3 rounded-full cursor-pointer transition duration-300;
+    }
+    &.red-primary .hs-button {
+        @apply bg-red-500 text-white border-2 font-bold border-red-500 hover:bg-white hover:text-red-500 px-[100px] py-3 rounded-full cursor-pointer transition duration-300;
+    }
+    &.left .actions {
+        @apply text-left pl-4;
+    }
+    &.center .actions {
+        @apply text-center;
+    }
+    &.right .actions {
+        @apply text-right;
+    }
+    input {
+        @apply mt-2 inline-block;
+    }
+    label {
+        @apply inline-block mt-2;
+    }
+}
+
+#booking {
+    a {
+        color: #F69300;
+    }
+}

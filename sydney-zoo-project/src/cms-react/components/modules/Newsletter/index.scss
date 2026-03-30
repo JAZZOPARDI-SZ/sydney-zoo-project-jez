@@ -1,0 +1,51 @@
+.newsletter-form {
+
+    & > span {
+        width: 100%;
+    }
+
+    fieldset {
+        @apply max-w-full flex justify-center mb-[22px];
+
+        @media (max-width: 767px) {
+            @apply flex-col gap-6;
+          }
+
+        label {
+            @apply text-white;
+        }
+
+        .hs-error-msg {
+            font-size: 12px !important;
+        }
+
+        .hs-form-field {
+            width: 100% !important;
+            float: none;
+
+            input {
+                color: #2F251D;
+                width: 100% !important;
+                @apply text-center py-2 px-4 font-bold;
+
+                &::placeholder {
+                    opacity: .6;
+                    color: inherit;
+                }
+
+            }
+        }
+    }
+
+    .actions {
+        text-align: center
+    }
+
+    [type="submit"] {
+        @apply bg-orange-500 text-sm text-white font-bold inline-flex items-center justify-center px-6 py-3 rounded-full;
+    }
+
+    .hs-form-field {
+        @apply px-[13px];
+    }
+}

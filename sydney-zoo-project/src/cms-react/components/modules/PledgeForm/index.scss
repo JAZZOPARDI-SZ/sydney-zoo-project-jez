@@ -1,0 +1,50 @@
+.pledge-form {
+
+    & > span {
+        width: 100%;
+    }
+    form {
+        @apply flex flex-row items-start lg:items-end px-4;
+    }
+
+    .hs-form-private {
+        @apply flex mb-[22px];
+
+        @media (max-width: 767px) {
+            @apply flex-col gap-6;
+          }
+
+        label {
+            span {
+                @apply text-green-500 mb-2 inline-block mt-4 font-bold;
+            }
+        }
+
+        .hs-error-msg {
+            font-size: 12px !important;
+        }
+
+        .hs-form-field {
+            float: none;
+            @apply min-w-[325px] max-w-[325px];
+            .input {
+                @apply min-w-[325px] max-w-[325px];
+            }
+            input {
+                color: #2F251D;
+                width: 100% !important;
+                @apply border border-black py-2 px-4 font-bold rounded-sm min-w-[325px] max-w-[325px];
+
+                &::placeholder {
+                    opacity: .6;
+                    color: inherit;
+                }
+
+            }
+        }
+    }
+
+    [type="submit"] {
+        @apply bg-orange-500 ml-4 lg:ml-8 text-sm text-white font-bold inline-flex px-4 py-3 rounded-full mt-[10px];
+    }
+}

@@ -1,0 +1,175 @@
+.calendar input,
+.calendar button {
+  font: inherit;
+}
+
+.calendar__container__content {
+  display: flex;
+  max-width: 100%;
+  flex-basis: 420px;
+  flex-direction: column;
+  flex-grow: 100;
+  align-items: stretch;
+  padding-top: 1em;
+}
+
+.calendar__container__content .react-calendar {
+  margin: 0 auto;
+}
+
+/* custom css start*/
+.react-calendar {
+  border: 0px solid #a0a096;
+  background: #fff;
+  font-family: "Gilroy";
+  width: 300px;
+  max-width: 100%;
+}
+.react-calendar__tile--active {
+    color: #000001;
+    background-color: #8dd6c3 !important;
+}
+.react-calendar__month-view__days__day--weekend {
+  color: #000001;
+}
+.react-calendar__month-view__weekdays {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.react-calendar__tile:disabled {
+    background-color: #ffffff;
+    color: #ababab;
+}
+.react-calendar__navigation button:disabled {
+    background-color: #ffffff;
+}
+.react-calendar button {
+    height: 40px;
+    margin: 0;
+    border: 0;
+    outline: none;
+    border-radius: 50% 50%;
+}
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus,
+.react-calendar__decade-view__years__year:hover,
+.react-calendar__decade-view__years__year:focus,
+.react-calendar__year-view__months__month:hover,
+.react-calendar__year-view__months__month:focus
+{
+  background-color: #ffffff !important;
+}
+
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background-color: rgb(141, 214, 195, 0.5);
+}
+
+.react-calendar__tile--now {
+  background-color: #ffffff;
+}
+
+.time-selection {
+            display: flex;
+            gap: 16px;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+
+        .time-selection  input[type="radio"] {
+            display: none;
+        }
+
+        .time-selection  .time-label {
+           width: auto;
+          padding: 10px 18px;
+            background-color: white;
+            border: 2px solid transparent;
+            border-radius: 24px;
+            display: inline-flex;
+            box-sizing: border-box;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            color: #000;
+            transition: all 0.3s ease;
+        }
+
+        .time-selection  .time-label:hover {
+            border: 2px solid #8dd6c3;
+        }
+
+        .time-selection  input[type="radio"]:checked+.time-label {
+            background-color: #8dd6c3;
+            border: 2px solid transparent;
+        }
+                .time-selection .selected-time-disabled {
+                  background-color: rgba(209, 207, 203);
+                  color: rgba(119, 119, 119);
+}
+.calendar-month-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: 40px;
+   font-weight: 700;
+   margin-bottom: 20px;
+}
+
+.react-calendar__navigation {
+  display: none;
+}
+.month-btn {
+  background-color: rgb(255 255 255);
+  color: #000001;
+  font-size: 14px;
+  font-weight: 700;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  text-align: center;
+  padding: 3px 10px;
+  width: 80px;
+}
+.month-btn:hover {
+  border: 2px solid rgb(137 206 185);
+  border-radius: 30px;
+  color: #000001;
+  
+}
+
+
+.active-month {
+  background-color: rgb(137, 206, 185);
+  color: #000001;
+  
+}
+
+.month-pre-arrow-btn {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+height: 40px;
+}
+.month-next-arrow-btn {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  height: 40px;
+}
+.month-button-disable {
+  color: #d1cfcb !important;
+}
+
+/* custom css end */
